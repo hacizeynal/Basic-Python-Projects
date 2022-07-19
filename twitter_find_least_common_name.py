@@ -1,11 +1,8 @@
-# Find the least common name used in below list name a
+# Find the most common name used in below list name a
 from collections import Counter
-cnt = Counter()
 
-
-a = ["John","Zeynal","John","Faraj","Zeynal","John"]
-
-for i in a:
-    cnt[i] = cnt[i] + 1
-    print(cnt[i])
-print("Most common used name is {}".format(cnt.most_common(1)[0][0]))
+a = [ "John", "Zeynal", "John", "Faraj", "Zeynal", "John", "Zeynal", "Zeynal", "Zeynal" ]
+counter = Counter()
+for item in a:
+    counter [ item ] =counter[item] -1
+print("The least used item is => {}".format(counter.most_common(1) [ 0 ] [ 0 ]))
